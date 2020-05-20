@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cate3listing_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/cate2listing_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:foregroundGravity="left"
+        android:gravity="left"
+        android:lineSpacingExtra="10sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="Categories"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cate2listing_All"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cate2listing_All"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorGray"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="SEE ALL"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cate2listing_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cate2listing_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cate2listing_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

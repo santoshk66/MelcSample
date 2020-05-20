@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlueMel</item>
+        <item name="colorPrimaryDark">@color/colorBlueMelLight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.MelBue">
+        <item name="colorAccent">@color/colorBlueMel</item> <!-- Whatever color you want-->
+    </style>
+    <style name="Splach" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+    </style>
+
+</resources>
